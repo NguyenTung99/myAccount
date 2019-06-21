@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo tài khoản</title>
+</head>
+<body>
+<script>
+
+    function myAccount(str) {
+
+        let regexp = /^[_a-z0-9]{6,}$/;
+        if (regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let account = "123abc_";
+    console.log(myAccount(account));
+    account = "12345";
+    console.log(myAccount(account));
+
+
+</script>
+
+</body>
+</html>
